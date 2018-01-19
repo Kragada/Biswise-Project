@@ -17,7 +17,7 @@ class Ball:
     def __init__(self):
         self.size = random.randrange(10,80)
         color = random.choice(colors)
-        self.shape = canvas.create_rectangle(0, 0, self.size, self.size, fill=color)
+        self.shape = canvas.create_oval(0, 0, self.size, self.size, fill=color)
         self.speedx = random.randrange(1, 10)
         self.speedy = random.randrange(1, 10)
 
